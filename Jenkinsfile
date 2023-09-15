@@ -8,6 +8,10 @@ pipeline {
     stage('Compile') {
       steps {
         echo 'Hello World'
+        script {
+          log.info 'Starting'
+          log.warning 'Nothing to do!'
+        }
       }
     }
 
